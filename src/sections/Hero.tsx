@@ -12,10 +12,10 @@ const Hero: FC = () => {
           <h1 className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0">Turning ideas into digital experiences
           through code and creative design.</h1>
           
-          <div className="flex flex-col md:flex-row md:items-center mt-10 items-start gap-6">
+          <div className="flex flex-col md:flex-row md:items-center mt-10 md:mt-20 items-start gap-6 md:gap-10">
             <Button
               variant="secondary"
-              className="border-2 border-orange-500 rounded-lg p-8"
+              className="border-[3px] border-orange-500 rounded-2xl p-8"
               iconAfter={
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
