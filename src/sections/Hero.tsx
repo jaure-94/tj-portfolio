@@ -31,7 +31,7 @@ const Hero: FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             ref={titleScope}
-            className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0 leading-tight lg:leading-normal font-normal md:font-medium tracking-wide">
+            className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0 lg:leading-tight font-normal md:font-medium tracking-wide">
             Turning ideas into digital experiences
             through code and creative design.
           </motion.h1>

@@ -9,6 +9,7 @@ import FAQs from "@/sections/FAQs";
 import Footer from "@/sections/Footer";
 import Loader from "@/components/Loader";
 import { useEffect, useState } from "react";
+import Contact from "@/sections/Contact";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -31,6 +32,7 @@ export default function Home() {
         <About />
         <Projects />
         <FAQs />
+        <Contact />
         <Footer />
       </>
     )
