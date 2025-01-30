@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: Outfit;
+}
+
 @layer components {
   /* .container {
     @apply p-4 md:p-8 lg:p-16
   } */
+}
+
+.line {
+  @apply overflow-hidden;
+}
+
+.word {
+  @apply translate-y-full;
 }
