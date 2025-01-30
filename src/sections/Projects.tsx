@@ -12,7 +12,7 @@ const projects = [
 ];
 
 const Projects: FC = () => {
-  return <section className="py-24 md:py-32 lg:py-40" id="projects">
+  return <section className="pt-24 pb-10 md:pt-32 md:pb-16 lg:pt-40" id="projects">
     <div className="container">
       <h2 className="text-4xl md:text-6xl lg:text-7xl">Projects</h2>
       <div className="mt-10 md:mt-16 lg:mt-20">

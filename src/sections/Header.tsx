@@ -124,22 +124,6 @@ const Header: FC = () => {
     navScope,
     navAnimate
   ]);
-
-  // const handleClickMobileNavItem = (e: React.MouseEvent<HTMLElement>) => {
-  //   if (!e) return;
-  //   e.preventDefault();
-  //   setIsOpen(false);
-
-  //   const url = new URL(e.currentTarget.href);
-  //   const hash = url.hash;
-
-  //   const target = document.querySelector(hash);
-
-  //   if (!target) return;
-  //   target.scrollIntoView({ behavior: "smooth" })
-
-  //   console.log(hash);
-  // }
   
   return <header className="">
     {/* DropDownNav Navigation Layer */}
