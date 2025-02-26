@@ -4,7 +4,7 @@ import tjPencilSketch from "@/assets/images/tj-pencil-sketch.png";
 
 const About: FC = () => {
   return (
-    <section id="about" className="w-full scroll-mt-20 py-24 md:py-32 lg:py-40">
+    <section id="about" className="w-full scroll-mt-20 py-16 md:py-24 lg:py-32">
       <div className="container flex flex-col items-center gap-10">
         <h2 className="text-4xl md:text-6xl lg:text-7xl">About Me</h2>
         <div className="rounded-full">

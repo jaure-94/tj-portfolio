@@ -7,9 +7,13 @@
 }
 
 @layer components {
-  /* .container {
-    @apply p-4 md:p-8 lg:p-16
-  } */
+  .form-input {
+    @apply w-full bg-gray-100 border-2 border-gray-400/50 text-gray-700 mt-2 p-3 rounded-lg focus:outline-none;
+  }
+
+  .form-text-area {
+    @apply w-full h-32 bg-gray-100 border-2 border-gray-400/50 text-gray-700 mt-2 p-3 rounded-lg focus:outline-none;
+  }
 }
 
 .line {

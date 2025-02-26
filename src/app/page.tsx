@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import Intro from "@/sections/Intro";
 import Projects from "@/sections/Projects";
@@ -10,6 +9,7 @@ import Footer from "@/sections/Footer";
 import Loader from "@/components/Loader";
 import { useEffect, useState } from "react";
 import Contact from "@/sections/Contact";
+import Header_refactor from "@/sections/Header_refactor";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -26,7 +26,7 @@ export default function Home() {
 
   return ( isLoading ? ( <Loader /> ) : (
       <>
-        <Header />
+        <Header_refactor />
         <Hero />
         <Intro />
         <About />

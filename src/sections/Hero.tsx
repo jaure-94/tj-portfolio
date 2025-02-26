@@ -23,7 +23,7 @@ const Hero: FC = () => {
     })
   }, []);
 
-  return <section id="home">
+  return <section id="home" className="!-z-50">
     <div className="grid md:grid-cols-12 md:h-screen items-stretch">
       <div className="md:col-span-7 flex flex-col justify-center">
         <div className="container !max-w-full">
@@ -31,7 +31,7 @@ const Hero: FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             ref={titleScope}
-            className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0 lg:leading-tight font-normal md:font-medium tracking-wide">
+            className="text-4xl md:text-6xl lg:text-7xl mt-40 md:mt-0 leading-normal lg:leading-tight font-medium tracking-wider">
             Turning ideas into digital experiences
             through code and creative design.
           </motion.h1>
@@ -41,31 +41,36 @@ const Hero: FC = () => {
               initial={{ opacity: 0, y: "100%" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.5,
-                delay: 1.8
+                duration: 0.7,
+                delay: 2.1
               }}
             >
-              <Button
-                variant="secondary"
-                className="border-[3px] border-orange-500 rounded-2xl p-8"
-                iconAfter={
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-                  </svg>
-                }>
-                <span>View My Work</span>
-              </Button>
+              <a href="#projects">
+                <Button
+                  variant="secondary"
+                  className="border-[3px] border-orange-500 rounded-2xl p-8"
+                  iconAfter={
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                    </svg>
+                  }>
+                  
+                    <span>View My Work</span>
+                </Button>
+              </a>
             </motion.div>
             
             <motion.div
               initial={{ opacity: 0, y: "100%" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.5,
-                delay: 2.2
+                duration: 0.7,
+                delay: 2.6
               }}
             >
-              <Button variant="text">Let&apos;s Talk</Button>
+              <a href="#contact">
+                <Button variant="text">Let&apos;s Talk</Button>
+              </a>
             </motion.div>
           </div>
         </div>

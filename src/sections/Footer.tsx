@@ -66,7 +66,7 @@ const Footer: FC = () => {
           </div>
         </div>
       </div>
-      <p className="py-16 font-thin text-xs text-white/40 md:text-sm">&copy;Copyright TJ The Developer - 2025</p>
+      <p className="py-16 font-thin text-xs text-white/40 md:text-sm">&copy; TJ The Developer - 2025</p>
     </div>
   </footer>;
 };
