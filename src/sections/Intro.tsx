@@ -1,8 +1,10 @@
 "use client";
 
-import { stagger, useAnimate, useInView } from "motion/react";
-import { FC, useEffect } from "react";
-import SplitType from "split-type";
+import Reveal from "@/animations/Reveal";
+// import { stagger, useAnimate, useInView } from "motion/react";
+import { FC } from "react";
+// import { useEffect } from "react";
+// import SplitType from "split-type";
 
 const Intro: FC = () => {
   // const [scope, animate] = useAnimate();
@@ -31,13 +33,15 @@ const Intro: FC = () => {
   // }, [inView]);
 
   return (
-  <section className="px-5 py-24 mt-12 md:py-32 lg:py-40 md:mt-16 lg:mt-20" id="intro">
+  <section className="px-5 mt-12 md:mt-16 lg:mt-36 py-16 md:py-20 lg:py-24" id="intro">
     <div className="container">
-      <h2 className="text-2xl text-stone-900 leading-normal md:text-4xl lg:text-5xl md:leading-normal lg:leading-normal lg:w-[82%]">
-        Hie. I&apos;m Tawanda, and I&apos;m a software developer. I invite you to explore the intersection between design and technology on my portfolio.
-        I solve problems for clients in
-        different industries by creating custom, bespoke web applications that keep things simple and focus on meeting the client&apos;s needs.
-      </h2>
+      <Reveal>
+        <h2 className="text-2xl text-stone-900 leading-normal md:text-4xl lg:text-5xl md:leading-normal lg:leading-normal lg:w-[82%]">
+          Hie. I&apos;m Tawanda, and I&apos;m a software developer. I invite you to explore the intersection between design and technology on my portfolio.
+          I solve problems for clients in
+          different industries by creating custom, bespoke web applications that keep things simple and focus on meeting the client&apos;s needs.
+        </h2>
+      </Reveal>
     </div>
   </section>
 )};

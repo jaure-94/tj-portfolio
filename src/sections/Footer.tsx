@@ -1,3 +1,4 @@
+import Reveal from "@/animations/Reveal";
 import Button from "@/components/Button";
 import { FC } from "react";
 
@@ -30,36 +31,43 @@ const Footer: FC = () => {
       <div className="pt-12 md:pt-16 lg:pt-20 px-3 flex flex-col items-start">
         <div className="grid md:grid-cols-3">
           <div className="md:col-span-2">
-            <h2 className="py-16 text-3xl md:text-5xl lg:text-7xl font-bold">Let&apos;s make something <span className="lg:text-orange-600">great</span> together.</h2>
-            <Button
-              className="lowercase"
-              variant="secondary"
-              iconAfter={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5">
+            <Reveal>
+              <h2 className="py-16 text-3xl md:text-5xl lg:text-7xl font-bold">Let&apos;s make something <span className="lg:text-orange-600">great</span> together.</h2>
+            </Reveal>
 
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            }>
-              tawandajaure@outlook.com
-            </Button>
+            <Reveal>
+              <Button
+                className="lowercase"
+                variant="secondary"
+                iconAfter={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-5">
+
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              }>
+                tawandajaure@outlook.com
+              </Button>
+            </Reveal>
           </div>
           <div>
             <nav className="flex flex-col items-start md:items-end mt-16 gap-8 lg:gap-10">
               {navItems.map(({ href, label }) => (
                 <a href={href} key={label}>
-                  <Button variant="text" className="md:text-lg">
-                    {label}
-                  </Button>
+                  <Reveal>
+                    <Button variant="text" className="md:text-lg">
+                      {label}
+                    </Button>
+                  </Reveal>
                 </a>
               ))}
             </nav>

@@ -1,5 +1,4 @@
 import { FC, useEffect } from "react";
-/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 import tjHeroImage from "@/assets/images/tj-hero-image.jpg";
 import Image from "next/image";
 import Button from "@/components/Button";
@@ -21,7 +20,7 @@ const Hero: FC = () => {
       duration: 0.5,
       delay: stagger(0.2),
     })
-  }, []);
+  }, [titleScope, titleAnimate]);
 
   return <section id="home" className="!-z-50">
     <div className="grid md:grid-cols-12 md:h-screen items-stretch">
@@ -76,13 +75,16 @@ const Hero: FC = () => {
         </div>
       </div>
 
-      <div className="md:col-span-5">
+      <div className="relative md:col-span-5">
         <div className="mt-20 md:mt-0 md:h-full">
           <Image
             src={tjHeroImage}
             alt="Tawanda Jaure Portrait"
             className="size-full object-cover"
           />
+        </div>
+        <div className="absolute top-0 left-0 w-full h-full opacity-35 bg-[radial-gradient(ellipse_200%_100%_at_bottom_right,#000000,transparent)]">
+
         </div>
       </div>
     </div>
