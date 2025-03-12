@@ -14,6 +14,7 @@ export const skillSet = [
   "Tailwind",
   "Typescript",
   "PostgreSQL",
+  "Mongodb",
   "AWS",
   "NodeJS",
   "Git",

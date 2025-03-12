@@ -5,7 +5,7 @@ import tjGrayScale from "@/assets/images/tj-smile-gray-scale.jpg";
 import Image from 'next/image';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { Button } from '@/components/ui/button';
+import Button from '@/components/Button';
 import { Input } from '@/components/ui/input'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
 import { eventFormSchema } from './validator';
@@ -108,6 +108,7 @@ const Contact: FC = () => {
                       />
                     </div>
                     <Button
+                      variant="submit"
                       type="submit"
                       className="mt-5 max-w-52"
                       disabled={form.formState.isSubmitting}

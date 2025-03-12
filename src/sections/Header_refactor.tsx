@@ -170,7 +170,9 @@ const Header_refactor: FC = () => {
                 }} />
               </svg>
             </div>
-            <Button variant="primary" className="hidden md:inline-flex">Contact Me</Button>
+            <Link href="#contact">
+              <Button variant="primary" className="hidden md:inline-flex">Contact Me</Button>
+            </Link>
           </div>
         </div>
       </div>

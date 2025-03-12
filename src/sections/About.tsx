@@ -27,6 +27,7 @@ const About: FC = () => {
                 problems for my clients. I&apos;m also of
                 the belief that solving complex problems doesn&apos;t have to be devoid of creativity and art.
               </p>
+              <Reveal>
               <p>From a technical standpoint, I specialize in full-stack web development. On the frontend, I build
                 beautiful user interfaces using tools that include React,
                 Next.js, CSS3, Tailwindcss and Typescript. On the backend, I typically write Restful APIs with
@@ -34,11 +35,14 @@ const About: FC = () => {
                 Git and GitHub for version control and collaboration on projects. Finally, I deploy my solutions on AWS cloud,
                 a backend Swiss army knife that includes EC2, Amplify, RDS and API Gateway.
               </p>
+              </Reveal>
+              <Reveal>
               <p>
                 On a personal note outside of computer science, I&apos;m an art and sports junkie. Artistically, I enjoy portrait art.
                 The self-portrait above is an example of my sketch work. I&apos;ve been drawing since I was a kid. I
                 also watch the English Premier League and follow the NBA closely.
               </p>
+              </Reveal>
             </div>
 
             <div className="md:col-span-1">
