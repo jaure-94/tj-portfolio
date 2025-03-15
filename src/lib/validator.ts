@@ -5,5 +5,5 @@ export const eventFormSchema = z.object({
     message: "Username must be at least 2 characters"
   }),
   email: z.string().min(3, 'Title must be t least 3 characters'),
-  message: z.string().min(3, 'Message must be t least 3 characters').max(400),
+  message: z.string().min(3, 'Message must be t least 3 characters').max(1000),
 })
