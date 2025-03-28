@@ -30,7 +30,7 @@ const About: FC = () => {
               <Reveal>
               <p>From a technical standpoint, I specialize in full-stack web development. On the frontend, I build
                 beautiful user interfaces using tools that include React,
-                Next.js, CSS3, Tailwindcss and Typescript. On the backend, I typically write Restful APIs with
+                Next.js, CSS3, Tailwindcss, GraphQL (Apollo Client) and Typescript. On the backend, I typically write GraphQL APIs with
                 Node.js and a PostgreSQL relational database, albeit following industry best practices. I use
                 Git and GitHub for version control and collaboration on projects. Finally, I deploy my solutions on AWS cloud,
                 a backend Swiss army knife that includes EC2, Amplify, RDS and API Gateway.
