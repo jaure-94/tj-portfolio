@@ -10,6 +10,7 @@ export const skillSet = [
   "SVG",
   "JavaScript",
   "React",
+  "Vite",
   "NextJS",
   "Tailwind",
   "Typescript",
@@ -20,4 +21,5 @@ export const skillSet = [
   "Git",
   "GitHub",
   "Adobe Illustrator",
+  "GraphQL",
 ]
